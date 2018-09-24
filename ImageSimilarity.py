@@ -52,7 +52,6 @@ def batch_extractor(images_path, pickled_db_path="features.pck"):
     with open(pickled_db_path, 'w') as fp:
         pickle.dump(result, fp)
 
-
 class Matcher(object):
 
     def __init__(self, pickled_db_path="features.pck"):
